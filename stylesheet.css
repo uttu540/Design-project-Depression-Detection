@@ -1,0 +1,48 @@
+body{
+    background-color:#B1D0FF;
+    
+}
+
+.description{
+    position: absolute;
+    width: 583.97px;
+    height: 262.43px;
+    left: 65.39px;
+    top: 158.62px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 66px;
+
+    color: #F9F9F9;
+
+}
+
+.btn{
+    position: absolute;
+width: 583.97px;
+height: 57.32px;
+left: 65.39px;
+top: 458.34px;
+
+border: 4px solid #F9F9F9;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 35px;
+
+color: #F9F9F9;
+}
+
+.blob{
+    position: absolute;
+    
+    height: 580px;
+    padding-top: 100px;
+    padding-left: 150px;
+    padding-bottom: 10px;
+}
+
