@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<htm>
+    <head>
+    <title>Story-Game</title>
+    <script src="https://kit.fontawesome.com/88cacf6a0e.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheetradio.css') }}">
+    </head>
+    <body class = "container-fluid">
+        <div class="row">
+
+            <div class="col-5">
+                <p class="intro">Hello and Welcome!!&nbsp;&nbsp;</p>
+
+                <p class="whatname">What is your name?</p>
+                <form>
+                <textarea id="name" name="name" rows="8" cols="6"></textarea>
+                <p class="whatage">Age</p>
+                <textarea id="age" name="age" rows="8" cols="6"></textarea>
+                <p class="whatgender">Gender</p>
+                <section class="light11">
+                    <label>
+                <input type="radio" id="male" name="gender" value="male">  <span class="design"></span> <span class="text">Male</span> 
+                    </label>
+                    <label>
+                <input type="radio" id="female" name="gender" value="female"> <span class="design"></span> <span class="text">Female</span> 
+                    </label>
+                </section>
+                <a href="{{ url_for("home2")}}" class="Next">Next>></a>
+            </form>
+                    
+                </div>
+            <div class="col-7">
+                <img class = "blob1" src="{{ url_for('static', filename='images/hello.png') }}">
+            </div>
+        </div>
+
+    
+
+    </body>
+</htm>

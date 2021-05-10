@@ -1,0 +1,9 @@
+setup.py
+Depression_Detection/Flask_Server.py
+Depression_Detection/__init__.py
+Depression_Detection/views.py
+Depression_Detection.egg-info/PKG-INFO
+Depression_Detection.egg-info/SOURCES.txt
+Depression_Detection.egg-info/dependency_links.txt
+Depression_Detection.egg-info/requires.txt
+Depression_Detection.egg-info/top_level.txt

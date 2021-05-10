@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Story-Game</title>
+        <script src="https://kit.fontawesome.com/88cacf6a0e.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='stylesheetradio.css') }}">
+    </head>
+
+    <body class="container-fluid Questions">
+
+        <div class="row">
+
+        <div class="col-10">
+        <figure class="swing">
+        <img src="{{ url_for('static', filename='images/Hospital.png') }}" width = "617.45">
+        </figure>
+
+        <p class = "arrive">We are here!!</p>
+
+        <p class="honest">Friend: Let's go inside and ya before we go I just want to tell you be honest with 
+            how you feel so that we can get it fixed.</p>
+        
+        <figure class="swing1">
+        <img src="{{ url_for('static', filename='images/doctor.png') }}" width="617.45">
+
+        </figure>
+
+        <p class="health">Friend : Hello Doctor!! This is my friend. He is feeling sad and he has been gloomy for some days so 
+            I thought I shall take him to you so that 
+            you can check if there is any signs of depression or not.</p>
+
+        <p class="serious">Doctor: Hello!! You certainly did the right thing. 
+            Mental health is something we should take very seriously. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            So, I will ask you some questions and then we will check
+            if you need medical assistance or not.</p>
+        
+        
+        
+        <p class="first">First Question:</p>
+
+        
+
+        <form action="{{ url_for("predict")}}" method="post">
+        
+            
+        <p class="question1">Your relationship status?</p>
+        <section class="light">
+        <label>
+        <input type="radio" id="single" name="question1" value="single">  <span class="design"></span> <span class="text">Single</span>
+        </label>
+        
+        <label>
+        <input type="radio" id="relationship" name="question1" value="relationship"> <span class="design"></span> <span class="text">In a Relationship</span>
+        </label>
+
+        </section>
+
+        <p class="question2">Are you happy with your financial state?</p>
+        <section class="light1">
+        <label>
+        <input type="radio" id="financeYes" name="question2" value="yes">  <span class="design"></span> <span class="text">Yes</span>
+        </label>
+
+        <label>
+        <input type="radio" id="financeNo" name="question2" value="no"> <span class="design"></span> <span class="text">No</span>
+        </label>
+
+        </section>
+
+        <p class="question3">Are you feeling pressure in your study or work right now?</p>
+        
+        <section class="light2">
+            <label>
+        <input type="radio" id="pressureYes" name="question3" value="yes">  <span class="design"></span> <span class="text">Yes</span>
+            </label>
+            <label>
+        <input type="radio" id="pressureNot" name="question3" value="Not Applicable"> <span class="design"></span> <span class="text">Not Applicable</span>
+            </label>
+            <label>
+        <input type="radio" id="pressureNo" name="question3" value="no">  <span class="design"></span> <span class="text">No</span>
+            </label>
+        </section>
+
+
+        <p class="question4">Are you satisfied with your academic result?</p>
+
+        <section class="light3">
+            <label>
+
+        <input type="radio" id="academicYes" name="question4" value="yes">  <span class="design"></span> <span class="text">Yes</span>
+            </label>
+            <label>
+        <input type="radio" id="academicNot" name="question4" value="Not Applicable"> <span class="design"></span> <span class="text">Not Applicable</span>
+            </label>
+            <label>
+        <input type="radio" id="academicNo" name="question4" value="no">  <span class="design"></span> <span class="text">No</span>
+            </label>
+        </section>
+        <figure class="swing2">
+        <img src="{{ url_for('static', filename='images/doctor.png') }}" width="617.45">
+        </figure>
+
+        <p class="question5">Are you happy with your living place?</p>
+
+        <section class="light4">
+            <label>
+        <input type="radio" id="livingYes" name="question5" value="yes">  <span class="design"></span> <span class="text">Yes</span> 
+            </label>
+            <label>
+        <input type="radio" id="livingNot" name="question5" value="Not Applicable"> <span class="design"></span> <span class="text">Not Applicable</span>
+            </label>
+            <label>
+        <input type="radio" id="livingNo" name="question5" value="no">   <span class="design"></span> <span class="text">No</span>
+            </label>
+        </section>
+
+        
+        <p class="question6">Who supports you when you are not succeeding in your academic life?</p>
+        <section class="light5">
+            <label>
+        <input type="radio" id="supportFriends" name="question6" value="Friends">  <span class="design"></span> <span class="text">Friends</span> 
+            </label>
+            <label>
+        <input type="radio" id="supportFamily" name="question6" value="Family">  <span class="design"></span> <span class="text">Family</span>
+            </label>
+            <label>
+        <input type="radio" id="supportNo" name="question6" value="No One"> <span class="design"></span> <span class="text">No One</span>
+            </label>
+            <label>
+        <input type="radio" id="supportNot" name="question6" value="Not Applicable"> <span class="design"></span> <span class="text">Not Applicable</span>
+            </label>
+        </section>
+
+
+        <p class="question7">Have you used any social media within the last 6 hours?</p>
+        <section class="light6">
+            <label>
+        <input type="radio" id="mediaYes" name="question7" value="yes">  <span class="design"></span> <span class="text">Yes</span> 
+            </label>
+            <label>
+        <input type="radio" id="mediaNot" name="question7" value="Not Applicable"> <span class="design"></span> <span class="text">Not Applicable</span>
+            </label>
+            <label>
+        <input type="radio" id="mediaNo" name="question7" value="no">  <span class="design"></span> <span class="text">No</span>
+            </label>
+        </section>
+
+
+        <p class="question8">Are you satisfied with your meal today?</p>
+        <section class="light7">
+            <label>
+        <input type="radio" id="mealYes" name="question8" value="yes">  <span class="design"></span> <span class="text">Yes</span> 
+            </label>
+            <label>
+        <input type="radio" id="mealNot" name="question8" value="Neutral"> <span class="design"></span> <span class="text">Not Applicable</span>
+            </label>
+            <label>
+        <input type="radio" id="mealNo" name="question8" value="no">  <span class="design"></span> <span class="text">No</span>
+            </label>
+        </section>
+        <figure class="swing3">
+        <img src="{{ url_for('static', filename='images/doctor.png') }}" width="617.45">
+        </figure>
+            
+
+        <p class="question9">Are you feeling sick/health issues today?</p>
+        <section class="light8">
+            <label>
+        <input type="radio" id="healthYes" name="question9" value="yes">  <span class="design"></span> <span class="text">Yes</span> 
+            </label>
+            <label>
+        <input type="radio" id="healthNo" name="question9" value="No"> <span class="design"></span> <span class="text">No</span>
+            </label>
+        </section>
+        <p class="last-two">Last Two Questions</p>
+
+        <p class="question10">Have you done any recreational activity (sports, gaming, hobby etc.) today?</p>
+        <section class="light9">
+            <label>
+        <input type="radio" id="activityYes" name="question10" value="yes">   <span class="design"></span> <span class="text">Yes</span> 
+            </label>
+            <label>
+        <input type="radio" id="activityNo" name="question10" value="No"> <span class="design"></span> <span class="text">No</span>
+            </label>
+        </section>
+        <p class="question11">How long did you sleep last night?(in hours)</p>
+        <textarea id="sleep" name="sleep" rows="8" cols="6">
+        </textarea>
+        
+        
+        <button type="submit" class="btn btn-outline-light btn-lg submitform">End</button>
+        
+        </form>
+    </div>
+    <div class="col-2">
+
+    </div>
+    </div>
+    </body>
+
+
+</html>

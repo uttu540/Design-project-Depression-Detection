@@ -1,0 +1,381 @@
+
+
+/* section */
+.light {
+  width: 50%;
+  min-height: inherit;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+
+  position: absolute;
+  
+  top: 1750px;
+  left: 235px;
+}
+
+
+
+.light {
+  --primary: hsl(250, 100%, 44%);
+  --other: #455A64;
+
+  
+}
+
+
+
+
+/* label */
+label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  margin: 1px 0;
+
+  cursor: pointer;
+  position: relative;
+}
+
+
+/* input */
+input {
+  opacity: 0;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+
+/* .design */
+.design {
+  width: 16px;
+  height: 16px;
+
+  border: 1px solid var(--other);
+  border-radius: 100%;
+  margin-right: 10px;
+  margin-left: 25px;
+
+  position: relative;
+}
+
+.design::before,
+.design::after {
+  content: "";
+  display: block;
+
+  width: inherit;
+  height: inherit;
+
+  border-radius: inherit;
+
+  position: absolute;
+  transform: scale(0);
+  transform-origin: center center;
+}
+
+.design:before {
+  background: var(--other);
+  opacity: 0;
+  transition: .3s;
+}
+
+.design::after {
+  background: var(--primary);
+  opacity: .4;
+  transition: .6s;
+}
+
+
+/* .text */
+.text {
+  color: var(--other);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+
+/* checked state */
+input:checked+.design::before {
+  opacity: 1;
+  transform: scale(.6);
+}
+
+
+/* other states */
+input:hover+.design,
+input:focus+.design {
+  border: 1px solid var(--primary);
+}
+
+input:hover+.design:before,
+input:focus+.design:before {
+  background: var(--primary);
+}
+
+input:hover~.text {
+  color: var(--primary);
+}
+
+input:focus+.design::after,
+input:active+.design::after {
+  opacity: .1;
+  transform: scale(2.6);
+}
+
+
+.light1 {
+  width: 50%;
+  min-height: inherit;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+
+  position: absolute;
+  
+  top: 1850px;
+  left: 235px;
+}
+
+.light1 {
+  --primary: hsl(250, 100%, 44%);
+  --other: #455A64;
+
+  
+}
+
+.light2 {
+  width: 50%;
+  min-height: inherit;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+
+  position: absolute;
+  
+  top: 1950px;
+  left: 235px;
+}
+
+.light2 {
+  --primary: hsl(250, 100%, 44%);
+  --other: #455A64;
+
+  
+}
+
+.light3 {
+  width: 50%;
+  min-height: inherit;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+
+  position: absolute;
+  
+  top: 2050px;
+  left: 235px;
+}
+
+.light3 {
+  --primary: hsl(250, 100%, 44%);
+  --other: #455A64;
+
+  
+}
+
+.light4 {
+  width: 50%;
+  min-height: inherit;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+
+  position: absolute;
+  
+  top: 2875px;
+  left: 235px;
+}
+
+.light4 {
+  --primary: hsl(250, 100%, 44%);
+  --other: #455A64;
+
+  
+}
+
+.light5 {
+  width: 60%;
+  min-height: inherit;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+
+  position: absolute;
+  
+  top: 2980px;
+  left: 235px;
+}
+
+.light5 {
+  --primary: hsl(250, 100%, 44%);
+  --other: #455A64;
+
+  
+}
+
+.light6 {
+  width: 50%;
+  min-height: inherit;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+
+  position: absolute;
+  
+  top: 3090px;
+  left: 235px;
+}
+
+.light6 {
+  --primary: hsl(250, 100%, 44%);
+  --other: #455A64;
+
+  
+}
+
+.light7 {
+  width: 50%;
+  min-height: inherit;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+
+  position: absolute;
+  
+  top: 3195px;
+  left: 235px;
+}
+
+.light7 {
+  --primary: hsl(250, 100%, 44%);
+  --other: #455A64;
+
+  
+}
+
+.light8 {
+  width: 50%;
+  min-height: inherit;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+
+  position: absolute;
+  
+  top: 4020px;
+  left: 235px;
+}
+
+.light8 {
+  --primary: hsl(250, 100%, 44%);
+  --other: #455A64;
+
+  
+}
+
+.light9 {
+  width: 50%;
+  min-height: inherit;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+
+  position: absolute;
+  
+  top: 4185px;
+  left: 235px;
+}
+
+.light9{
+  --primary: hsl(250, 100%, 44%);
+  --other: #455A64;
+
+  
+}
+
+.light10 {
+  width: 50%;
+  min-height: inherit;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+
+  position: absolute;
+  
+  top: 545px;
+  left: 345px;
+}
+
+.light10{
+  --primary: hsl(250, 100%, 44%);
+  --other: #455A64;
+
+  
+}
+
+.light11 {
+  width: 50%;
+  min-height: inherit;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+
+  position: absolute;
+  
+  top: 545px;
+  left: 145px;
+}
+
+.light11{
+  --primary: hsl(250, 100%, 44%);
+  --other: #455A64;
+
+  
+}
+
+
+
+
+
