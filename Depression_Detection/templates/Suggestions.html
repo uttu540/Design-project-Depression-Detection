@@ -36,14 +36,15 @@ counters.forEach(counter => {
   }
 
   updateCounter();
- 
 });
     
             </script>
             <p class="suggest">Suggestions</p>
-            <p class="suggestion">You can install Sass on Windows, Mac, or Linux by downloading the package for your operating system from GitHub 
-                and adding it to your PATH. 
-                That's all—there are no external dependencies and nothing else you need to install. </p>
+            <p class="suggestion">{{feedback}}</p>
+
+            <audio src="{{ url_for('static', filename='audio/music1.mp3') }}" id="aud" loop autoplay>	
+            </audio>
+            <img src="{{ url_for('static', filename='images/music.gif') }}" class="audio" onClick="document.getElementById('aud').play(); return false;" ondblclick="document.getElementById('aud').pause(); return false;">
         </div>
     
         

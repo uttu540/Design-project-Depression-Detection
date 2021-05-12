@@ -53,7 +53,7 @@
         <p class="question1">Your relationship status?</p>
         <section class="light">
         <label>
-        <input type="radio" id="single" name="question1" value="single">  <span class="design"></span> <span class="text">Single</span>
+        <input type="radio" id="single" name="question1" value="single" required>  <span class="design"></span> <span class="text">Single</span>
         </label>
         
         <label>
@@ -65,7 +65,7 @@
         <p class="question2">Are you happy with your financial state?</p>
         <section class="light1">
         <label>
-        <input type="radio" id="financeYes" name="question2" value="yes">  <span class="design"></span> <span class="text">Yes</span>
+        <input type="radio" id="financeYes" name="question2" value="yes" required>  <span class="design"></span> <span class="text">Yes</span>
         </label>
 
         <label>
@@ -78,7 +78,7 @@
         
         <section class="light2">
             <label>
-        <input type="radio" id="pressureYes" name="question3" value="yes">  <span class="design"></span> <span class="text">Yes</span>
+        <input type="radio" id="pressureYes" name="question3" value="yes" required>  <span class="design"></span> <span class="text">Yes</span>
             </label>
             <label>
         <input type="radio" id="pressureNot" name="question3" value="Not Applicable"> <span class="design"></span> <span class="text">Not Applicable</span>
@@ -94,7 +94,7 @@
         <section class="light3">
             <label>
 
-        <input type="radio" id="academicYes" name="question4" value="yes">  <span class="design"></span> <span class="text">Yes</span>
+        <input type="radio" id="academicYes" name="question4" value="yes" required>  <span class="design"></span> <span class="text">Yes</span>
             </label>
             <label>
         <input type="radio" id="academicNot" name="question4" value="Not Applicable"> <span class="design"></span> <span class="text">Not Applicable</span>
@@ -111,7 +111,7 @@
 
         <section class="light4">
             <label>
-        <input type="radio" id="livingYes" name="question5" value="yes">  <span class="design"></span> <span class="text">Yes</span> 
+        <input type="radio" id="livingYes" name="question5" value="yes" required>  <span class="design"></span> <span class="text">Yes</span> 
             </label>
             <label>
         <input type="radio" id="livingNot" name="question5" value="Not Applicable"> <span class="design"></span> <span class="text">Not Applicable</span>
@@ -125,7 +125,7 @@
         <p class="question6">Who supports you when you are not succeeding in your academic life?</p>
         <section class="light5">
             <label>
-        <input type="radio" id="supportFriends" name="question6" value="Friends">  <span class="design"></span> <span class="text">Friends</span> 
+        <input type="radio" id="supportFriends" name="question6" value="Friends" required>  <span class="design"></span> <span class="text">Friends</span> 
             </label>
             <label>
         <input type="radio" id="supportFamily" name="question6" value="Family">  <span class="design"></span> <span class="text">Family</span>
@@ -142,7 +142,7 @@
         <p class="question7">Have you used any social media within the last 6 hours?</p>
         <section class="light6">
             <label>
-        <input type="radio" id="mediaYes" name="question7" value="yes">  <span class="design"></span> <span class="text">Yes</span> 
+        <input type="radio" id="mediaYes" name="question7" value="yes" required>  <span class="design"></span> <span class="text">Yes</span> 
             </label>
             <label>
         <input type="radio" id="mediaNot" name="question7" value="Not Applicable"> <span class="design"></span> <span class="text">Not Applicable</span>
@@ -156,7 +156,7 @@
         <p class="question8">Are you satisfied with your meal today?</p>
         <section class="light7">
             <label>
-        <input type="radio" id="mealYes" name="question8" value="yes">  <span class="design"></span> <span class="text">Yes</span> 
+        <input type="radio" id="mealYes" name="question8" value="yes" required>  <span class="design"></span> <span class="text">Yes</span> 
             </label>
             <label>
         <input type="radio" id="mealNot" name="question8" value="Neutral"> <span class="design"></span> <span class="text">Not Applicable</span>
@@ -173,7 +173,7 @@
         <p class="question9">Are you feeling sick/health issues today?</p>
         <section class="light8">
             <label>
-        <input type="radio" id="healthYes" name="question9" value="yes">  <span class="design"></span> <span class="text">Yes</span> 
+        <input type="radio" id="healthYes" name="question9" value="yes" required>  <span class="design"></span> <span class="text">Yes</span> 
             </label>
             <label>
         <input type="radio" id="healthNo" name="question9" value="No"> <span class="design"></span> <span class="text">No</span>
@@ -184,20 +184,23 @@
         <p class="question10">Have you done any recreational activity (sports, gaming, hobby etc.) today?</p>
         <section class="light9">
             <label>
-        <input type="radio" id="activityYes" name="question10" value="yes">   <span class="design"></span> <span class="text">Yes</span> 
+        <input type="radio" id="activityYes" name="question10" value="yes" required>   <span class="design"></span> <span class="text">Yes</span> 
             </label>
             <label>
         <input type="radio" id="activityNo" name="question10" value="No"> <span class="design"></span> <span class="text">No</span>
             </label>
         </section>
         <p class="question11">How long did you sleep last night?(in hours)</p>
-        <textarea id="sleep" name="sleep" rows="8" cols="6">
+        <textarea id="sleep" name="sleep" rows="8" cols="6" required = "required">
         </textarea>
         
         
         <button type="submit" class="btn btn-outline-light btn-lg submitform">End</button>
         
         </form>
+        <audio src="{{ url_for('static', filename='audio/music1.mp3') }}" id="aud" loop autoplay>	
+        </audio>
+        <img src="{{ url_for('static', filename='images/music.gif') }}" class="audio" onClick="document.getElementById('aud').play(); return false;" ondblclick="document.getElementById('aud').pause(); return false;">
     </div>
     <div class="col-2">
 

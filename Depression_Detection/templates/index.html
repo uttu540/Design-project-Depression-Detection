@@ -21,6 +21,10 @@
                     We hope you are doing fine. Let’s get started with the test.</p>
 
                     <a class="link" href="{{ url_for("home1")}}"><button class="btn btn-outline-light btn-lg">BEGIN</button></a>
+                    <audio src="{{ url_for('static', filename='audio/music1.mp3') }}" id="aud" loop>	
+                    </audio>
+                    <img src="{{ url_for('static', filename='images/music.gif') }}" class="audio" onClick="document.getElementById('aud').play(); return false;" ondblclick="document.getElementById('aud').pause(); return false;">
+                
             </div>
             <div class="col-7">
                 

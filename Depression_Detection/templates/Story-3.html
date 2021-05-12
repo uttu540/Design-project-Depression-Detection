@@ -12,13 +12,20 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesheet.css') }}">
     </head>
 
-    <body>
+    <body class="container-fluid">
+
+        <div class="shape-blob"></div>
+	    <div class="shape-blob two"></div>
 
         <img src="{{ url_for('static', filename='images/Girl.png') }}" class="girl">
 
         <p class = "visit">I feel we should visit a doctor. Let's Go!!!!</p>
 
         <a href="{{ url_for("home4")}}" class="Next2">Next>></a>
+
+        <audio src="{{ url_for('static', filename='audio/music1.mp3') }}" id="aud" loop autoplay>	
+        </audio>
+        <img src="{{ url_for('static', filename='images/music.gif') }}" class="audio" onClick="document.getElementById('aud').play(); return false;" ondblclick="document.getElementById('aud').pause(); return false;">
 
     </body>
 </html>

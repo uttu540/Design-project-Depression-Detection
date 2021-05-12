@@ -20,7 +20,7 @@ def home():
 def home1():
     return render_template('Story.html')
 
-@app.route('/story2')
+@app.route('/story2', methods=['POST'])
 def home2():
     return render_template('Story-2.html')
 
@@ -146,13 +146,15 @@ def predict():
         finalAnswer = 0
         if result == 1:
             finalAnswer = random.randrange(70, 90)
+            suggestion = "Don't worry you just need to take care of your mental health and try consulting a doctor who might be able to help you out."
         elif result == 0:
             finalAnswer = random.randrange(20,50)
+            suggestion = "That's great to hear, stay motivated and follow your daily routine."
 
        
 
        
-    return render_template("Suggestions.html", value=finalAnswer)
+    return render_template("Suggestions.html", value=finalAnswer, feedback = suggestion)
 
 
 
