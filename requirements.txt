@@ -9,7 +9,7 @@ cachetools==4.2.1
 certifi==2020.12.5
 chardet==4.0.0
 click==7.1.2
--e git+https://github.com/uttu540/Design-project-Depression-Detection.git@e7f0f18742810241fffacba7ffcce709b391e04d#egg=Depression_Detection
+-e git+https://github.com/uttu540/Design-project-Depression-Detection.git@8fbd234090b7f9691624a640ddff9dd052b6bfb5#egg=Depression_Detection
 distlib==0.3.1
 filelock==3.0.12
 Flask==1.1.2
