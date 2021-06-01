@@ -4,6 +4,6 @@ Problem Statement: To design and develop a game that will help in detecting depr
 
 Objectives: 
 To develop a browser-based game.
-To create an ML algorithm to detect depression.
-Create a recommendation system for recommending stuff that will help people to come out of depression.
+To create a deep learning model to detect depression.
+
 
