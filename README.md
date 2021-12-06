@@ -25,6 +25,6 @@ Steps to run this application-
 
 ![Home Page](.gitbook/assets/1.JPG) ![Survey Welcome Page](.gitbook/assets/2.JPG) ![](.gitbook/assets/3.JPG) ![](.gitbook/assets/4.JPG) ![](.gitbook/assets/5.JPG) ![](.gitbook/assets/6.JPG)
 
-{% embed url="https://docs.google.com/document/d/1TUIIuVAEmHxuVJeNbOr1Qiz3WjnO7-egY4Mwdy1RK9Q/edit?usp=sharing" %}
+Documentation Link - https://docs.google.com/document/d/1TUIIuVAEmHxuVJeNbOr1Qiz3WjnO7-egY4Mwdy1RK9Q/edit?usp=sharing
 
 Working on the deployment part where I will deploy the application on cloud using heroku.
