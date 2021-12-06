@@ -2,12 +2,11 @@
 
 A Web App built to detect depression while using a story based survey approach and used deep learning model to detect depression.
 
-Objectives: 
-To develop a browser-based game.
-To create a deep learning model to detect depression.
-
+Objectives: To develop a browser-based game. To create a deep learning model to detect depression.
 
 The project is built on flask framework, so we have created the file directory in a way the flask server supports. The HTML files are in Templates folder and the CSS and Javascript files in Static folder. Please refer to flask documentation on how to setup a flask file directory.
+
+{% embed url="https://www.figma.com/proto/0dkVyly1NnfwzTGesvlUep/Depression-detection-website?node-id=2%3A0&page-id=0%3A1&scaling=scale-down-width&starting-point-node-id=2%3A0&viewport=270%2C48%2C0.07" %}
 
 Steps to run this application-
 
